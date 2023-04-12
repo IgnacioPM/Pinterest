@@ -76,7 +76,7 @@
 }
 
 .grid-item img {
-  width: 230px;
+  width: 140px;
   border-radius: 15px;
   cursor: zoom-in;
   filter: brightness(100%);
@@ -88,9 +88,35 @@
   -webkit-filter: brightness(40%);
 }
 
-.grid-item span {
+.grid-item span {  
+  width: 140px;
   color: rgb(41, 41, 41);
   display: flex;
   justify-content: center;
   cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    margin: 0 auto;
+  }
+  .grid-item {
+    margin-bottom: 30px;
+  }
+  
+  .grid-item img {
+    width: 230px;
+    border-radius: 15px;
+    cursor: zoom-in;
+    filter: brightness(100%);
+    background-color: lightgray;
+  }
+  .grid-item span {  
+    width: 20px;
+    color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
 }
