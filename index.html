@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="menu-start">
+            <button class="btn">
+                <img class="logo" src="images/logo.png" alt="logo">
+            </button>
+            <button class="btn">
+                <a href="#">Inicio</a>
+            </button>
+            <button class="btn">
+                <a href="#">Hoy</a>
+            </button>
+            <button class="btn">
+                <a href="#">Crear</a>
+
+                <img src="images/down_icon.ico" height="15px" width="15px" alt="">
+            </button>
+        </ul>
+        <form class="search-bar">
+            <div class="icon">
+                <img src="images/search_zoom_icon.ico" alt="Search Icon" height="18px" width="18px">
+            </div>
+            <input type="text" class="search-input" placeholder="Search">
+        </form>
+        <ul class="menu">
+            <button class="btn">
+                <img src="images/8666714_bell_icon.ico" height="24px" width="24px" alt="">
+            </button>
+            <button class="btn">
+                <img src="images/message_icon.ico" height="24px" width="24px" alt="">
+            </button>
+            <button class="btn">
+                <img src="images/sign_icon.ico" height="24px" width="24px" alt="">
+            </button>
+            <button class="btn">
+                <img src="images/down_icon.ico" height="16px" width="16px" alt="">
+            </button>
+        </ul>
+    </nav>
+
+    
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/128.jpg" width="230" height="128" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/148.jpg" width="230" height="148" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/228.jpg" width="230" height="228" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/195.jpg" width="230" height="195" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/164.jpg" width="230" height="164" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/226.jpg" width="230" height="226" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/245.jpg" width="230" height="245" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/194.jpg" width="230" height="194" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/215.jpg" width="230" height="215" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/184.jpg" width="230" height="184" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/165.jpg" width="230" height="165" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/210.jpg" width="230" height="210" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/216.jpg" width="230" height="216" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/130.jpg" width="230" height="130" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/158.jpg" width="230" height="158" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/148.jpg" width="230" height="148" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/220.jpg" width="230" height="220" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+        <div class="grid-item">
+            <img src="https://picsum.photos/230/232.jpg" width="230" height="232" />
+            <span>Lorem ipsum, dolor sit amet</span>
+        </div>
+      </div>
+
+      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+      <script>
+        var elem = document.querySelector(".grid-container");
+        var msnry = new Masonry(elem, {
+          // options
+          itemSelector: ".grid-item",
+          columnWidth: 230,
+          gutter: 20,
+          isFitWidth: true
+        });
+      </script>
+</body>
+
+</html>
